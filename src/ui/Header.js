@@ -9,12 +9,12 @@ import {
   Button,
   Menu,
   MenuItem,
-  useMediaQuery,
   SwipeableDrawer,
   IconButton,
   List,
   ListItem,
   ListItemText,
+  Hidden,
 } from '@material-ui/core';
 
 import Link from '../Link';
@@ -129,7 +129,6 @@ const Header = ({ selectedIndex, setSelectedIndex, value, setValue }) => {
   const iOS =
     typeof navigator !== 'undefined' &&
     /iPad|iPhone|iPod/.test(navigator.userAgent);
-  const matches = useMediaQuery(theme.breakpoints.down('md'));
   const [openDrawer, setOpenDrawer] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const [openMenu, setOpenMenu] = useState(false);
@@ -232,8 +231,11 @@ const Header = ({ selectedIndex, setSelectedIndex, value, setValue }) => {
           }
           break;
         case '/estimate':
-          setValue(0);
-          setSelectedIndex();
+          if (value !== 5) {
+            setValue(5);
+          }
+          // setValue(0);
+          // setSelectedIndex();
           break;
         default:
           break;
@@ -393,7 +395,8 @@ const Header = ({ selectedIndex, setSelectedIndex, value, setValue }) => {
                 src="/assets/logo.svg"
               />
             </Button>
-            {matches ? drawer : tabs}
+            <Hidden mdDown>{tabs}</Hidden>
+            <Hidden lgUp>{drawer}</Hidden>
           </Toolbar>
         </AppBar>
       </ElevationScroll>

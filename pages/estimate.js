@@ -110,7 +110,7 @@ const softwareQuestions = [
         id: 2,
         title: 'iOS Application',
         subtitle: null,
-        icon: '/assets/iphone/svg',
+        icon: 'assets/iphone.svg',
         iconAlt: 'outline of iphone',
         selected: false,
         cost: 100,
