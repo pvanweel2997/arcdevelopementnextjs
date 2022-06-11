@@ -3,12 +3,6 @@ import Link from '../src/Link';
 import Lottie from 'react-lottie';
 import { makeStyles } from '@material-ui/styles';
 import { Grid, Typography, IconButton, useMediaQuery } from '@material-ui/core';
-// import backArrow from '../../assets/backArrow.svg';
-// import forwardArrow from '../../assets/forwardArrow.svg';
-// import lightbulb from '../../assets/bulb.svg';
-// import cash from '../../assets/cash.svg';
-// import stopwatch from '../../assets/stopwatch.svg';
-
 import documentsAnimation from '../src/animations/documentsAnimation/data.js';
 import scaleAnimation from '../src/animations/scaleAnimation/data';
 import automationAnimation from '../src/animations/automationAnimation/data.json';
@@ -337,7 +331,7 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
         <Grid item container direction="column" alignItems="center">
           <Grid item>
             <img
-              src="/assets/roots.svg"}
+              src="/assets/roots.svg"
               alt="tree with roots extending out"
               height={matchesSM ? '300em' : '450em'}
               width={matchesSM ? '300em' : '450em'}

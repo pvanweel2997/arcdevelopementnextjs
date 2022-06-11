@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../src/Link';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import { Grid, Button, Typography, useMediaQuery } from '@material-ui/core';
 
-import ButtonArrow from './ButtonArrow';
-import customSoftwareIcon from '../../assets/Custom Software Icon.svg';
-import mobileAppsIcon from '../../assets/mobileIcon.svg';
-import websitesIcon from '../../assets/websiteIcon.svg';
+import ButtonArrow from '../src/ui/ButtonArrow';
+// import customSoftwareIcon from '../../assets/Custom Software Icon.svg';
+// import mobileAppsIcon from '../../assets/mobileIcon.svg';
+// import websitesIcon from '../../assets/websiteIcon.svg';
 
 const useStyles = makeStyles(theme => ({
   learnButton: {
@@ -88,7 +88,7 @@ const Services = ({ setValue, setSelectedIndex }) => {
             </Typography>
             <Button
               component={Link}
-              to="/mobileapps"
+              href="/mobileapps"
               variant="outlined"
               className={classes.learnButton}
               onClick={e => {
@@ -108,7 +108,7 @@ const Services = ({ setValue, setSelectedIndex }) => {
             <img
               className={classes.icon}
               alt="mobile phone icon"
-              src={mobileAppsIcon}
+              src="/assets/mobileIcon.svg"
               width="250em"
             />
           </Grid>
@@ -139,7 +139,7 @@ const Services = ({ setValue, setSelectedIndex }) => {
             </Typography>
             <Button
               component={Link}
-              to="/customsoftware"
+              href="/customsoftware"
               variant="outlined"
               className={classes.learnButton}
               onClick={e => {
@@ -159,7 +159,7 @@ const Services = ({ setValue, setSelectedIndex }) => {
             <img
               className={classes.icon}
               alt="custom software icon"
-              src={customSoftwareIcon}
+              src="/assets/CustomSoftwareIcon.svg"
             />
           </Grid>
         </Grid>
@@ -190,7 +190,7 @@ const Services = ({ setValue, setSelectedIndex }) => {
             </Typography>
             <Button
               component={Link}
-              to="/websites"
+              href="/websites"
               variant="outlined"
               className={classes.learnButton}
               onClick={e => {
@@ -210,7 +210,7 @@ const Services = ({ setValue, setSelectedIndex }) => {
             <img
               className={classes.icon}
               alt="website icon"
-              src={websitesIcon}
+              src="/assets/websiteIcon.svg"
               width="250em"
             />
           </Grid>

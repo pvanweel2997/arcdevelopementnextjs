@@ -16,7 +16,7 @@ import {
   Snackbar,
 } from '@material-ui/core';
 
-import ButtonArrow from './src/ui/ButtonArrow';
+import ButtonArrow from '../src/ui/ButtonArrow';
 
 const useStyles = makeStyles(theme => ({
   background: {
