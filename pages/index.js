@@ -2,7 +2,7 @@ import React from 'react';
 import Lottie from 'react-lottie';
 import Link from '../src/Link';
 
-import landingAnimation from '../src/animations/landinganimation/data.json';
+import landingAnimation from '../src/animations/landinganimation/data';
 
 import ButtonArrow from '../src/ui/ButtonArrow';
 import CallToAction from '../src/ui/CallToAction.js';
