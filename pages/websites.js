@@ -48,7 +48,7 @@ const Websites = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com/websites" key="og:url" />
-        <Link rel="canonical" key="canonical" href="arc.com/websites" />
+        <link rel="canonical" key="canonical" href="arc.com/websites" />
       </Head>
       <Grid
         item
@@ -85,7 +85,7 @@ const Websites = ({ setValue, setSelectedIndex }) => {
         </Grid>
         <Grid item container direction="column" className={classes.heading}>
           <Grid item>
-            <Typography align={matchesMD ? 'center' : undefined} variant="h2">
+            <Typography align={matchesMD ? 'center' : undefined} variant="h1">
               Website Development
             </Typography>
           </Grid>

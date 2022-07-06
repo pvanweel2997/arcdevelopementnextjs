@@ -57,7 +57,7 @@ const MobileApps = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com/mobileapps" key="og:url" />
-        <Link rel="canonical" key="canonical" href="arc.com/mobileapps" />
+        <link rel="canonical" key="canonical" href="arc.com/mobileapps" />
       </Head>
       <Grid
         item
@@ -94,7 +94,7 @@ const MobileApps = ({ setValue, setSelectedIndex }) => {
         </Grid>
         <Grid item container direction="column" className={classes.heading}>
           <Grid item>
-            <Typography align={matchesMD ? 'center' : undefined} variant="h2">
+            <Typography align={matchesMD ? 'center' : undefined} variant="h1">
               iOS/Android App Development
             </Typography>
           </Grid>

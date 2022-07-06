@@ -89,7 +89,7 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com/customsoftware" key="og:url" />
-        <Link rel="canonical" key="canonical" href="arc.com/customsoftware" />
+        <link rel="canonical" key="canonical" href="arc.com/customsoftware" />
       </Head>
       <Grid
         item
@@ -123,7 +123,7 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
         </Grid>
         <Grid item container direction="column" className={classes.heading}>
           <Grid item>
-            <Typography align={matchesMD ? 'center' : undefined} variant="h2">
+            <Typography align={matchesMD ? 'center' : undefined} variant="h1">
               Custom Software Development
             </Typography>
           </Grid>

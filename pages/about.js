@@ -57,14 +57,14 @@ const About = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com/about" key="og:url" />
-        <Link rel="canonical" key="canonical" href="arc.com/about" />
+        <link rel="canonical" key="canonical" href="arc.com/about" />
       </Head>
       <Grid
         item
         className={classes.rowContainer}
         style={{ marginTop: matchesMD ? '1em' : '2em' }}
       >
-        <Typography variant="h2" align={matchesMD ? 'center' : undefined}>
+        <Typography variant="h1" align={matchesMD ? 'center' : undefined}>
           About Us
         </Typography>
       </Grid>

@@ -48,12 +48,12 @@ const Revolution = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com/revolution" key="og:url" />
-        <Link rel="canonical" key="canonical" href="arc.com/revolution" />
+        <link rel="canonical" key="canonical" href="arc.com/revolution" />
       </Head>
       <Grid item className={classes.rowContainer} style={{ marginTop: '2em' }}>
         <Typography
           align={matchesMD ? 'center' : undefined}
-          variant="h2"
+          variant="h1"
           style={{ fontFamily: 'Pacifico' }}
         >
           The Revolution

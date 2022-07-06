@@ -195,7 +195,7 @@ const Contact = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com/contact" key="og:url" />
-        <Link rel="canonical" key="canonical" href="arc.com/contact" />
+        <link rel="canonical" key="canonical" href="arc.com/contact" />
       </Head>
       <Grid
         item
@@ -215,7 +215,7 @@ const Contact = ({ setValue, setSelectedIndex }) => {
             <Grid item>
               <Typography
                 align={matchesMD ? 'center' : undefined}
-                variant="h2"
+                variant="h1"
                 style={{ lineHeight: 1 }}
               >
                 Contact Us
@@ -499,7 +499,7 @@ const Contact = ({ setValue, setSelectedIndex }) => {
         >
           <Grid container direction="column">
             <Grid item>
-              <Typography align={matchesMD ? 'center' : undefined} variant="h2">
+              <Typography align={matchesMD ? 'center' : undefined} variant="h1">
                 Simple Software.
                 <br />
                 Revolutionary Results.

@@ -62,7 +62,7 @@ const Services = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com/services" key="og:url" />
-        <Link rel="canonical" key="canonical" href="arc.com/services" />
+        <link rel="canonical" key="canonical" href="arc.com/services" />
       </Head>
       <Grid
         item
@@ -74,7 +74,7 @@ const Services = ({ setValue, setSelectedIndex }) => {
         <Typography
           align={matchesSM ? 'center' : undefined}
           gutterbottom
-          variant="h2"
+          variant="h1"
         >
           Services
         </Typography>

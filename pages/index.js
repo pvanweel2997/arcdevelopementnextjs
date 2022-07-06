@@ -155,7 +155,7 @@ const LandingPage = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com" key="og:url" />
-        <Link rel="canonical" key="canonical" href="arc.com" />
+        <link rel="canonical" key="canonical" href="arc.com" />
       </Head>
       <Grid item>
         {/*---- Hero Block ----- */}
@@ -166,7 +166,7 @@ const LandingPage = ({ setValue, setSelectedIndex }) => {
           alignItems="center"
         >
           <Grid sm item className={classes.heroTextContainer}>
-            <Typography variant="h2" align="center">
+            <Typography variant="h1" align="center">
               Bringing West Coast Technology
               <br />
               to the Midwest
@@ -438,7 +438,7 @@ const LandingPage = ({ setValue, setSelectedIndex }) => {
                 style={{ marginBottom: matchesXS ? '10em' : 0 }}
                 direction="column"
               >
-                <Typography variant="h2" style={{ color: 'white' }}>
+                <Typography variant="h1" style={{ color: 'white' }}>
                   About Us
                 </Typography>
                 <Typography variant="subtitle2">Let's get personal.</Typography>
@@ -472,7 +472,7 @@ const LandingPage = ({ setValue, setSelectedIndex }) => {
               }}
             >
               <Grid container direction="column">
-                <Typography variant="h2" style={{ color: 'white' }}>
+                <Typography variant="h1" style={{ color: 'white' }}>
                   Contact Us
                 </Typography>
                 <Typography variant="subtitle2">Say hello!</Typography>
