@@ -195,6 +195,7 @@ const Contact = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com/contact" key="og:url" />
+        <Link rel="canonical" key="canonical" href="arc.com/contact" />
       </Head>
       <Grid
         item

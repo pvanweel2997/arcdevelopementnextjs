@@ -89,6 +89,7 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com/customsoftware" key="og:url" />
+        <Link rel="canonical" key="canonical" href="arc.com/customsoftware" />
       </Head>
       <Grid
         item

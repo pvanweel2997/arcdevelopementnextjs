@@ -154,7 +154,8 @@ const LandingPage = ({ setValue, setSelectedIndex }) => {
           content="Bringing West Coast Technology to the Midwestg | Arc Development"
           key="og:title"
         />
-        <meta property="og:url" content="arc.com/" key="og:url" />
+        <meta property="og:url" content="arc.com" key="og:url" />
+        <Link rel="canonical" key="canonical" href="arc.com" />
       </Head>
       <Grid item>
         {/*---- Hero Block ----- */}

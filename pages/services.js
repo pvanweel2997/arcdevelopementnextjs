@@ -61,6 +61,8 @@ const Services = ({ setValue, setSelectedIndex }) => {
           content="Bringing West Coast Technology to the Midwestg | Services"
           key="og:title"
         />
+        <meta property="og:url" content="arc.com/services" key="og:url" />
+        <Link rel="canonical" key="canonical" href="arc.com/services" />
       </Head>
       <Grid
         item

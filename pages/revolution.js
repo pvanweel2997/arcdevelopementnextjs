@@ -48,6 +48,7 @@ const Revolution = ({ setValue, setSelectedIndex }) => {
           key="og:title"
         />
         <meta property="og:url" content="arc.com/revolution" key="og:url" />
+        <Link rel="canonical" key="canonical" href="arc.com/revolution" />
       </Head>
       <Grid item className={classes.rowContainer} style={{ marginTop: '2em' }}>
         <Typography
