@@ -250,8 +250,9 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
         container
         direction={matchesMD ? 'column' : 'row'}
         alignItems={matchesMD ? 'center' : undefined}
-        justifyContent="space-between"
+        justifyContent={matchesMD ? 'center' : 'space-between'}
         className={classes.rowContainer}
+        style={{ display: matchesMD ? 'grid' : undefined }}
       >
         <Grid
           item
@@ -375,8 +376,11 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
         container
         direction={matchesMD ? 'column' : 'row'}
         alignItems={matchesMD ? 'center' : undefined}
-        justifyContent="space-between"
-        style={{ marginBottom: '20em' }}
+        justifyContent={matchesMD ? 'center' : 'space-between'}
+        style={{
+          marginBottom: '20em',
+          display: matchesMD ? 'grid' : undefined,
+        }}
         className={classes.rowContainer}
       >
         <Grid

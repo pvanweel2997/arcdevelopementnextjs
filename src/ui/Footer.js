@@ -80,7 +80,7 @@ const Footer = ({ selectedIndex, setSelectedIndex, value, setValue }) => {
           </Grid>
         </Grid>
         <Grid item className={classes.gridItem}>
-          <Grid container direction="column" spacing={2}>
+          <Grid container direction="column" spacing={2} style={{ margin: 0 }}>
             <Grid
               item
               className={classes.link}
@@ -133,7 +133,7 @@ const Footer = ({ selectedIndex, setSelectedIndex, value, setValue }) => {
         </Grid>
 
         <Grid item className={classes.gridItem}>
-          <Grid container direction="column" spacing={2}>
+          <Grid container direction="column" spacing={2} style={{ margin: 0 }}>
             <Grid
               item
               className={classes.link}
@@ -181,7 +181,7 @@ const Footer = ({ selectedIndex, setSelectedIndex, value, setValue }) => {
           </Grid>
         </Grid>
         <Grid item className={classes.gridItem}>
-          <Grid container direction="column" spacing={2}>
+          <Grid container direction="column" spacing={2} style={{ margin: 0 }}>
             <Grid
               item
               className={classes.link}
@@ -218,7 +218,7 @@ const Footer = ({ selectedIndex, setSelectedIndex, value, setValue }) => {
           </Grid>
         </Grid>
         <Grid item className={classes.gridItem}>
-          <Grid container direction="column" spacing={2}>
+          <Grid container direction="column" spacing={2} style={{ margin: 0 }}>
             <Grid
               item
               className={classes.link}
@@ -238,7 +238,12 @@ const Footer = ({ selectedIndex, setSelectedIndex, value, setValue }) => {
         src="/assets/footerAdornment.svg"
         className={classes.adornment}
       />
-      <Grid container className={classes.socialContainer} spacing={2}>
+      <Grid
+        container
+        className={classes.socialContainer}
+        spacing={2}
+        style={{ margin: 0 }}
+      >
         <Grid
           item
           component={'a'}
