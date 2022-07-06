@@ -144,6 +144,17 @@ const LandingPage = ({ setValue, setSelectedIndex }) => {
         <title key="title">
           Custom Software, Mobile Apps, and Websites | Arc Development
         </title>
+        <meta
+          name="description"
+          key="description"
+          content="Pristine software custom-designed from the ground up with custting-edge optimization. Use our free estimate calculator to check your project cost!"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwestg | Arc Development"
+          key="og:title"
+        />
+        <meta property="og:url" content="arc.com/" key="og:url" />
       </Head>
       <Grid item>
         {/*---- Hero Block ----- */}

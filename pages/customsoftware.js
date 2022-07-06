@@ -78,6 +78,17 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
         <title key="title">
           Custom Software Development and Design - Free Estimate
         </title>
+        <meta
+          name="description"
+          key="description"
+          content="Cutting-Edge custom software development with georgeous design from scratch - let us optimize your business, solving problems instead of creating new ones."
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwestg | Custom Software Development"
+          key="og:title"
+        />
+        <meta property="og:url" content="arc.com/customsoftware" key="og:url" />
       </Head>
       <Grid
         item

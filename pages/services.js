@@ -51,6 +51,16 @@ const Services = ({ setValue, setSelectedIndex }) => {
         <title key="title">
           Top Custum Software Development Sevices | Arc Development
         </title>
+        <meta
+          name="description"
+          key="description"
+          content="Cutting-edge software, mobile app and website development services with sleek custom designs - get a free online estimate instantly!"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwestg | Services"
+          key="og:title"
+        />
       </Head>
       <Grid
         item

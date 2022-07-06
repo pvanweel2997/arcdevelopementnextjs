@@ -46,6 +46,17 @@ const MobileApps = ({ setValue, setSelectedIndex }) => {
         <title key="title">
           iOS/Android App Design and Development | Arc Development
         </title>
+        <meta
+          name="description"
+          key="description"
+          content="Mobile Apps Made Easy | Our cutting-edge mobile app development process lets us build beautifully designed, carefully crafted apps for both iOS and Android."
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwestg | iOS/Android App Development"
+          key="og:title"
+        />
+        <meta property="og:url" content="arc.com/mobileapps" key="og:url" />
       </Head>
       <Grid
         item

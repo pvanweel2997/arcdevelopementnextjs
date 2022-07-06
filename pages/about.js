@@ -46,6 +46,17 @@ const About = ({ setValue, setSelectedIndex }) => {
     <Grid container direction="column">
       <Head>
         <title key="title">About Us - History & Team | Arc Development</title>
+        <meta
+          name="description"
+          key="description"
+          content="We provide the fastest, most modern, affordable, and aesthetic software design and development services in the Midwest. Get a free online estimate now!"
+        />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwestg | About Us"
+          key="og:title"
+        />
+        <meta property="og:url" content="arc.com/about" key="og:url" />
       </Head>
       <Grid
         item
