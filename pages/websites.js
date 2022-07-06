@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Link from '../src/Link';
 import { makeStyles } from '@material-ui/styles';
 import { Grid, Typography, IconButton, useMediaQuery } from '@material-ui/core';
@@ -32,6 +33,11 @@ const Websites = ({ setValue, setSelectedIndex }) => {
   const matchesXS = useMediaQuery(theme => theme.breakpoints.down('xs'));
   return (
     <Grid container direction="column">
+      <Head>
+        <title key="title">
+          Stunning Custom Website Design | Arc Development
+        </title>
+      </Head>
       <Grid
         item
         container

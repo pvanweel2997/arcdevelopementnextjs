@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Lottie from 'react-lottie';
 import Link from '../src/Link';
 
@@ -139,6 +140,11 @@ const LandingPage = ({ setValue, setSelectedIndex }) => {
   };
   return (
     <Grid container direction="column" className={classes.mainContainer}>
+      <Head>
+        <title key="title">
+          Custom Software, Mobile Apps, and Websites | Arc Development
+        </title>
+      </Head>
       <Grid item>
         {/*---- Hero Block ----- */}
         <Grid

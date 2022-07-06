@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Link from '../src/Link';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import { Grid, Button, Typography, useMediaQuery } from '@material-ui/core';
@@ -46,6 +47,11 @@ const Services = ({ setValue, setSelectedIndex }) => {
 
   return (
     <Grid container direction="column">
+      <Head>
+        <title key="title">
+          Top Custum Software Development Sevices | Arc Development
+        </title>
+      </Head>
       <Grid
         item
         style={{

@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Lottie from 'react-lottie';
 import { makeStyles } from '@material-ui/styles';
 import { Grid, Typography, useMediaQuery } from '@material-ui/core';
@@ -32,6 +33,11 @@ const Revolution = ({ setValue, setSelectedIndex }) => {
   const matchesSM = useMediaQuery(theme => theme.breakpoints.down('sm'));
   return (
     <Grid container direction="column">
+      <Head>
+        <title key="title">
+          The Revolution - Cutting-Edge Software | Arc Development
+        </title>
+      </Head>
       <Grid item className={classes.rowContainer} style={{ marginTop: '2em' }}>
         <Typography
           align={matchesMD ? 'center' : undefined}

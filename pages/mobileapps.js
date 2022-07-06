@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Link from '../src/Link';
 import Lottie from 'react-lottie';
 import { makeStyles } from '@material-ui/styles';
@@ -41,6 +42,11 @@ const MobileApps = ({ setValue, setSelectedIndex }) => {
 
   return (
     <Grid container direction="column">
+      <Head>
+        <title key="title">
+          iOS/Android App Design and Development | Arc Development
+        </title>
+      </Head>
       <Grid
         item
         container
