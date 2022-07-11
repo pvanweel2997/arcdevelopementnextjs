@@ -123,7 +123,15 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
         </Grid>
         <Grid item container direction="column" className={classes.heading}>
           <Grid item>
-            <Typography align={matchesMD ? 'center' : undefined} variant="h1">
+            <Typography
+              align={matchesMD ? 'center' : undefined}
+              variant="h1"
+              style={{
+                lineHeight: matchesXS ? 1.1 : null,
+                marginBottom: matchesXS ? '0.5em' : null,
+                fontSize: matchesXS ? '2.25em' : null,
+              }}
+            >
               Custom Software Development
             </Typography>
           </Grid>
@@ -300,7 +308,7 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
               </Typography>
             </Grid>
           </Grid>
-          <Grid item md>
+          <Grid item md style={{ marginTop: matchesSM ? '2em' : null }}>
             <Lottie
               options={documentsOptions}
               style={{ maxHeight: 275, maxWidth: 275, minHeight: 250 }}
@@ -314,7 +322,7 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
           direction={matchesSM ? 'column' : 'row'}
           md
         >
-          <Grid item md>
+          <Grid item md style={{ marginBottom: matchesSM ? '2em' : null }}>
             <Lottie
               options={scaleOptions}
               style={{ maxHeight: 260, maxWidth: 280 }}
@@ -423,7 +431,7 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
               </Typography>
             </Grid>
           </Grid>
-          <Grid item md>
+          <Grid item md style={{ marginTop: matchesSM ? '2em' : null }}>
             <Lottie
               options={automationsOptions}
               style={{ maxHeight: 290, maxWidth: 280 }}
@@ -437,7 +445,7 @@ const CustomSoftware = ({ setValue, setSelectedIndex }) => {
           direction={matchesSM ? 'column' : 'row'}
           md
         >
-          <Grid item md>
+          <Grid item md style={{ marginBottom: matchesSM ? '2em' : null }}>
             <Lottie
               options={uxOptions}
               style={{ maxHeight: 310, maxWidth: 155 }}

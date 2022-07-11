@@ -85,7 +85,15 @@ const Websites = ({ setValue, setSelectedIndex }) => {
         </Grid>
         <Grid item container direction="column" className={classes.heading}>
           <Grid item>
-            <Typography align={matchesMD ? 'center' : undefined} variant="h1">
+            <Typography
+              align={matchesMD ? 'center' : undefined}
+              variant="h1"
+              style={{
+                lineHeight: matchesXS ? 1.1 : null,
+                marginBottom: matchesXS ? '0.5em' : null,
+                fontSize: matchesXS ? '2.25em' : null,
+              }}
+            >
               Website Development
             </Typography>
           </Grid>

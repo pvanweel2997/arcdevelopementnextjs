@@ -68,12 +68,20 @@ const CallToAction = ({ setValue }) => {
       >
         <Grid container direction="column">
           <Grid item>
-            <Typography variant="h1">
+            <Typography
+              variant="h1"
+              gutterBottom
+              style={{ lineHeight: matchesSM ? 1.1 : null }}
+            >
               Simple Software.
               <br />
+              {matchesSM && <br />}
               Revolutionary Results.
             </Typography>
-            <Typography variant="subtitle2" style={{ fontsize: '1.5rem' }}>
+            <Typography
+              variant="subtitle2"
+              style={{ fontsize: matchesSM ? '1.25em' : '1.5rem' }}
+            >
               Take advantage of the 21st Century.
             </Typography>
             <Grid container justifyContent={matchesSM ? 'center' : undefined}>

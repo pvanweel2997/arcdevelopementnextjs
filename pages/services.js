@@ -37,6 +37,9 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('sm')]: {
       padding: 25,
     },
+    [theme.breakpoints.down('xs')]: {
+      padding: 5,
+    },
   },
 }));
 
@@ -44,6 +47,7 @@ const Services = ({ setValue, setSelectedIndex }) => {
   const classes = useStyles();
   const theme = useTheme();
   const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
+  const matchesXS = useMediaQuery(theme.breakpoints.down('xs'));
 
   return (
     <Grid container direction="column">
