@@ -28,6 +28,7 @@ import {
 import Link from '../Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ReactGA from 'react-ga';
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -247,29 +248,28 @@ const Header = props => {
     setOpenMenu(false);
   };
 
+  const path = typeof window !== 'undefined' ? window.location.pathname : null;
+
+  const activeIndex = () => {
+    const found = routes.find(route => route.link === path);
+    const menuFound = menuOptions.find(menu => menu.link === path);
+
+    if (menuFound) {
+      setValue(1);
+      setSelectedIndex(menuFound.selectedIndex);
+    } else if (found === undefined) {
+      setValue(false);
+    } else {
+      setValue(found.activeIndex);
+    }
+  };
+
   useEffect(() => {
-    [...menuOptions, ...routes].forEach(route => {
-      switch (window.location.pathname) {
-        case `${route.link}`:
-          if (value !== route.activeIndex) {
-            setValue(route.activeIndex);
-            if (route.selectedIndex && route.selectedIndex !== selectedIndex) {
-              setSelectedIndex(route.selectedIndex);
-            }
-          }
-          break;
-        case '/estimate':
-          if (value !== 5) {
-            setValue(5);
-          }
-          // setValue(0);
-          // setSelectedIndex();
-          break;
-        default:
-          break;
-      }
-    });
-  }, [value, selectedIndex, menuOptions, routes, setSelectedIndex, setValue]);
+    activeIndex();
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [path]);
+
+  // ReactGA.pageview(window.location.pathname + window.location.search);
 
   const tabs = (
     <>
